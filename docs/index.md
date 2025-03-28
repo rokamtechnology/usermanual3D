@@ -2,89 +2,122 @@
 
 **INTRODUCTION**
 
-Our application specialize in advanced automation technologies such as surface detect inspection, OCR/OCV (Optical Character Recognition/Optical Character Verification), and critical measurements. These technologies are integrated into our specialized application, **QualityInspection**, which is designed to enhance precision and operational efficiency in various industrial processes.
+Our application specialize in advanced automation technologies such as surface detect inspection, OCR/OCV (Optical Character Recognition/Optical Character Verification), and critical measurements.These technologies are integrated into our specialized application, **Inspect3D**, which is designed to enhance precision and operational efficiency in various industrial processes.
 
-**OBJECTIVES** 
-This document describes the procedure for using the Quality Inspection application. Below is an overview of its basic architecture:
+##**1. OBJECTIVES**
 
-![alt text](path/image-17.png)
+This document describes the procedure on the usage for the Tyre Side Wall Stamping Inspection Application.
 
- **HARDWARE :**
+The 3D Camera is mounted to the Robot 6th Axis and Scan the Sidewall of the Tyre to capture the 3D Data of the Sidewall of the Tyre.
 
-1.MONITOR :
+The 3D Data will be Inspected and the Application will shows the Results.
 
-    Connectivity: HDMI or DisplayPort
-
-    Aspect Ratio: 16:9
-
-    Resolution: 
-
-    [Full HD (1920x1080) with 100% Display Scaling]
-
-    or 
-
-    [4K (3840x2160) with 200% Display Scaling]
+<div style="text-align: center;">
+<img src="path/image-01.png" alt="alt text" style="width: 500px; height: auto;"> 
+</div>
 
 
-2.DESKTOP PC :
+**HARDWARE :**
 
-    Processor: Intel or AMD
+1. MONITOR :
 
-    Cores: Minimum 8 Cores with Minimum 16 Logical Processors
+        Connectivity: HDMI or DisplayPort
 
-    Generations: Intel (12th Gen or Above); AMD (Ryzen5 or Above)
+        Aspect Ratio: 16:9
 
-    Integrated Graphics: Intel UHD/XeGraphics or AMD Ryzen with Radeon Graphics
+        Resolution: 
 
-    SSD: 1TB; RAM: 16GB DDR4
+        [Full HD (1920x1080) with 100% Display Scaling]   or
+ 
 
-    Ethernet: Intel Gigabit Ethernet Port (I219-V or Equivalent)
-
-    USB3.0: Intel USB3.0 xHCI Compliant Host Controller Type-A
+        [4K (3840x2160) with 200% Display Scaling]
 
 
- **SOFTWARE :**
+2. DESKTOP PC :
+
+        Processor: Intel or AMD
+
+        Cores: Minimum 8 Cores with Minimum 16 Logical Processors
+
+        Generations: Intel (12th Gen or Above); AMD (Ryzen5 or Above)
+
+        Integrated Graphics: Intel UHD/XeGraphics or AMD Ryzen with Radeon Graphics
+
+        SSD: 1TB; RAM: 16GB DDR4
+
+        Ethernet: Intel Gigabit Ethernet Port (I219-V or Equivalent)
+
+        USB3.0: Intel USB3.0 xHCI Compliant Host Controller Type-A
+
+
+ **SOFTWARE:**
 
 OPERATING SYSTEM :
 
-    Windows 10 Pro or Windows 11 Pro; 64-Bit (x64)
+        Windows 10 Pro or Windows 11 Pro; 64-Bit (x64)
 
 QUALITY INSPECTION APPLICATION :
 
-![alt text](path/image-18.png)
+<div style="text-align: center;">
+<img src="path/image-02.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 The full installation, including the operating system, will require approximately 50 GB of space on the C drive for the new PC.
 
 
-## **APPLICATION**
+##**2. SOFTWARE APPLICATION**
 
-Click on the "**QualityInspection**" application icon located on the desktop. Once the application opens, it will start automatically. The following screen will appear for a few seconds while the required settings are loaded.
+Open the Application which is located in Desktop.
 
-![alt text](path/image-19.png)
+<div style="text-align: center;">
+<img src="path/image-03.png" alt="alt text" style="width: 85px; height: auto;"> 
+</div>
 
 
-## **LOGIN**
+Once the Application is opened, then Application will start. The Below Screen will appear for few seconds which will load all the settings required for the application.
 
-![alt text](path/image-20.png)
+<div style="text-align: center;">
+<img src="path/image-04.png" alt="alt text" style="width: 500px; height: auto;"> 
+</div>
+
+
+If there are any warnings or error, the respective dialog box will be shown. 
+After this screen is completed, the Login Screen will open.
+
+##**2.1 LOGIN**
+
+<div style="text-align: center;">
+<img src="path/image-05.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
     1.Click the i icon to open the User Manual.
 
     2.View the application version number in the bottom-right corner of the screen.
 
-    3.Enter your username and password on the login screen.
+**Enter your username and password on the login screen.**
 
-    4.Click the Login button to access the application.
-
-    5.Click the Exit button to close the application.
-
-    6.Contact the administrator for a valid username and password if needed.
-
-    7.The logged-in username will appear in the top-left corner of every screen.
+<div style="text-align: center;">
+<img src="path/image-06.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
 
 
-## **QUALITY INSPECTION**   DASHBOARD
+    1.Click the Login button to access the application.
 
-![alt text](path/image-01.png)
+    2.Click the Exit button to close the application.
+
+    3.The logged-in username will appear in the top-left corner of every screen from Dasboard.
+
+**Contact the administrator for a valid username and password if needed.** 
+<div style="text-align: center;">
+<img src="path/image-07.png" alt="alt text" style="width: 300px; height: auto;"> 
+</div>
+
+##**2.2 DASHBOARD**
+
+<div style="text-align: center;">
+<img src="path/image-08.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
 
 The dashboard contains all options available in this application. Some options are accessible based on the user type, as explained in the User Management section. 
 
@@ -114,13 +147,20 @@ The dashboard contains all options available in this application. Some options a
 
 **TCPServer:** Sample Application to Test and Check if the TCP Server is working properly with the TCP Client.
 
-**ModbusTCP:** Sample Application to Test and Check if the ModbusTCP is working properly with the TCP Client.
+**ModbusTCP    :** Sample Application to Test and Check if the ModbusTCP is working properly with the TCP Client.
 
 **Edit Image Settings:** Modify the Settings for all Inspection Parameters for PASS/FAIL in single screen.
 
-## **SETTINGS**
+**camera diagnostics:** This option is used to check the outputs or inputs given to the camera.
 
-![alt text](path/image-21.png)
+**Image diagnotics:** to view the point cloud file of the scanned component.
+
+##**2.3 SETTINGS**
+
+<div style="text-align: center;">
+<img src="path/image-09.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
 
 **Data Location:** Click on BrowseFolder Button and Select the Folder where we need to save the Inspection Results.
 
@@ -143,7 +183,10 @@ If this option is enabled, then during Startup of the Application, if the Availa
 
 **Save Original Image Format:** Select one among PNG, JPG, TIFF so that the original image has to be saved with different file format, which will be helpful based on different applications.
 
-![alt text](path/image-22.png)
+<div style="text-align: center;">
+<img src="path/image-10.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
 
 **Display Cycle Time in [ms]:** Enable or Disable this Functionality, so that we display the Cycle Time in the Inspection view in milliseconds or in seconds.
 
@@ -160,19 +203,30 @@ If this option is enabled, then during Startup of the Application, if the Availa
     Back: Click on Back Button to go back to Dashboard Screen.
 
 
-## **USER MANAGEMENT**
+##**2.4 USER management**
 
-![alt text](path/image-02.png)
+<div style="text-align: center;">
+<img src="path/image-11.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
-You can **add new users**, **delete existing users**, and **view existing users**. To add a **new user**, enter a username (up to 8 characters), a password (up to 8 characters), and select a role: **Administrator**, **Maintenance**, or **Operator**. Then, click the **Add User** button.
+You can **add new users**, **delete existing users**, and **view existing users**.
 
-![alt text](path/image-23.png)
+To add a **new user**, enter a username (up to 8 characters), a password (up to 8 characters), and select a role: **Administrator**, **Maintenance**, or **Operator**. 
+
+Then, click the **Add User** button.
+
 
 **Role Accessibility:**
 
-![alt text](path/image-24.png)
+<div style="text-align: center;">
+<img src="path/image-18.png" alt="alt text" style="width: 600px; height: auto;"> 
+</div>
 
-## **SKU MANAGEMENT**   
+##**2.5 SKU MANAGEMENT**
+
+<div style="text-align: center;">
+<img src="path/image-12.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 **Accessible for:** Administrator
 
@@ -182,42 +236,59 @@ You can **add new users**, **delete existing users**, and **view existing users*
 
 **SKU Name:** This is used as the name of the Item that has to be inspected.
 
-![alt text](path/image-03.png)
-
 **Create:** Select the SKU ID and enter the new SKU Name and click on **ADD** button. Special Characters and Existing SKU Names are not allowed to create new SKU.
+
+<div style="text-align: center;">
+<img src="path/image-20.png" alt="alt text" style="width: 300px; height: auto;"> 
+</div>
 
 **Delete:** Select the SKU.  Click on the ‘**x**’ mark. It will prompt dialog box to accept for the deletion of the SKU. Once it is deleted, it is deleted permanently and it is not possible to recover it back.
 
+<div style="text-align: center;">
+<img src="path/image-21.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
+
 **Copy:** Select the new SKU ID and Enter the New SKU Code. Select the Existing Job and Click on **COPY** Button. After Copy is completed, the newly copied Job is appeared in the list.
+
+<div style="text-align: center;">
+<img src="path/image-22.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
 
 **View:** All the Settings relative for the SKU will be visible in the main screen of this SKU Management.
 
+<div style="text-align: center;">
+<img src="path/image-19.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
 The Settings that are visible for every SKU are:
 
-    •	Image Settings: The inspection parameters are displayed in this section.
+    •	Image Settings : The inspection parameters are displayed in this section.
 
-    •	Communications: The values to be sent to other devices via Modbus TCP and
-                        TCP Server are displayed in this section.
+    •	Camera Settings : The camera settings for each SKU, such as the serial number
+    ,IP address, etc., are displayed in this section.
 
-    •	Camera Settings: The camera settings for each SKU, such as the serial number
-    ,                    IP address, etc., are displayed in this section.
+    •	Marking Items : The naming conventions for the inspection parameters that have 
+    been configured are displayed in this section.
 
-    •	Marking Items: The naming conventions for the inspection parameters that have 
-                       been configured are displayed in this section.
+    •	Communication Settings : The communication strings that are added to the sku will be visible in this section
 
 You can also delete individual settings by clicking the **DELETE** button.
 
-## **MARKING ITEMS**
-
-Accessible for: **Administrator**
+##**2.6 MARKING ITEMS**
 
 There are various tools available in this application for component inspection. You can configure the required tools by selecting the tool name, tool ID, and marking name.
 
-![alt text](path/image-04.png)
+<div style="text-align: center;">
+<img src="path/image-13.png" alt="alt text" style="width: 500px; height: auto;"> 
+</div>
+
+<div style="text-align: center;">
+<img src="path/image-14.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 •	Select the Existing **SKU**.
 
-•	Select the Tool and Select **Marking ID**.
+•	Click on **Select Tool** and Select **Marking ID** which is the tool required for the inspection.
 
 •	Enter Marking Name and Click on **ADD** Button.
 
@@ -229,244 +300,408 @@ There are various tools available in this application for component inspection. 
 
 •	Select "**PatternMatchMax**" as the first marking tool if you need to reference other inspection tools with pattern matching. This will ensure that the inspection tools move accordingly wherever the object moves
 
-
-## **CAMERA MANAGEMENT** 
-
-Accessible for: **Administrator**
+##**2.7 CAMERA MANAGEMENT**
 
 You can select a camera from the list of available, configured cameras. Each camera should be selected and configured with the appropriate SKU. There are various tools available in this application for component inspection. Configure the required tools by selecting the tool name, tool ID, and marking name.
 
-![alt text](path/image-05.png)
+<div style="text-align: center;">
+<img src="path/image-23.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 •	Select the **SKU Number**.  
 
 •	Select the **Camera**.
+
+•	Enable the Save Image Option.
+
+•	Click on **CONNECT**** Button.
+
+•	Click on **START** Button.
+
+•	Send the **TRIGGER** Command through ModbusTCP from PLC.
+
+•	Once the Image is captured, the STOP Button will be clicked automatically.
 
 •	Click on **SAVE**  button to save the Camera Settings for the Selected **SKU**.
 
 •	Click on **BACK**  button to go back to the dashboard.
 
 
-## **IMAGE MANAGEMENT**
+##**2.8 IMAGE MANAGEMENT**
 
-Accessible for: **Administrator**
+Accessible for: **Administrator**.
+
+<div style="text-align: center;">
+<img src="path/image-24.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 The images saved from **Camera Management** are displayed on this screen
 
-•	Select the **SKU Number**. 
-
-![alt text](path/image-06.png)
+•	Select the **SKU Number**.
 
 •   **Add Images:** You can also add images manually, though they are typically captured from Camera Management. If a camera is unavailable, offline inspection can be performed by adding images manually.
 
 •   **Delete Images:** If the saved images from the camera are not satisfactory, you can delete the image for the selected SKU
 
+•   Click on 3D Button(cube) below the images to view the image in 3D Viewer.
+
 •   Click the **BACK** button to return to the dashboard screen.
 
+##**2.9 TEACH IMAGE**
 
-## **COMMUNICATIONS SETTINGS**  
+Accessible for: Administrator
 
-Accessible for: **Administrator**
+•   Select SKU and click on **Load Settings** Button.
 
-![alt text](path/image-07.png)
+•   Select Image Number.
 
-### **COMMUNICATIONS** 
+•   Select Marking Item.  
 
-Accessible for: **Administrator**
+•   Click on **ADD** Button to Add/Edit Inspection Parameters
 
-![alt text](path/image-10.png)
+Select any Marking Item and click on **ADD** Button.
 
-•	Select the SKU Number. 
+<div style="text-align: center;">
+<img src="path/image-25.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+
+If the Marking Item is already available in the list, then it is possible to Delete the Marking Item by clicking on ‘**x**’ for selected Marking Item, or Edit the Marking Item by selecting the Marking Item from list and click on **EDIT** Button.
+
+Click on **SAVE** button to save the settings for the Selected SKU.
+
+Click on **BACK**  button to go back to the dashboard.
+
+When Clicked on ADD/EDIT button, the new screen will open to configure the inspection settings for that respective Marking Item configured Tool Name.
+
+Just for example, for each tool, a new marking item has been added in this user manual. Below is the Description for each Inspection Tool.
+
+**Tools:**
+
+**Pattern Match Max:** This tool is used to identify the pattern which is trained on the image. Used in Locating the Object, Presence/Absence of Objects in Image
+
+**Surface Distance:** This tool is used to measure distance from one surface to another surface for the defined regions.
+
+**Peak:** This tool is used to measure the distance value for the defined region.
+
+**Blob:** This tool is used to count the objects which are available at different surface distances.
+
+**Width:** This tool is used to measure the width between two edges for the defined region
+
+**Pixel Counter:** This tool is used to calculate the number of pixel values available in the given grey scale min-max values. Used for Presence/Absence of Objects in Image.
+
+**Combine Results:** This tool is used to give the combined results of all the configured tools.
+
+After configuring all tools, the teach image screen will look like this:
+
+<div style="text-align: center;">
+<img src="path/image-26.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+###**2.9.1 PATTERN MATCH MAX**
+
+<div style="text-align: center;">
+<img src="path/image-27.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+**Search Region:** It is Yellow-Color Region where the pattern has to be searched.
+
+**Pattern Region:** It is Blue-Color Region where the pattern has to be trained.
+If the Tool is Added for the First Time, then follow the below procedure:
+
+•	Click on **SELECT REGION** Button. Modify the Region of Pattern Region to train the pattern and modify the Region of Search Region in-order to search the Pattern.
+
+•	Click on **TRAIN** Button to train the selected Pattern Region.
+
+•	Click on **RUN** Button to run the Pattern in the Search Region.
+
+•	View the Pattern Found Results.
+
+•	Click on **SAVE** Button to save the setting.
+
+•	Click on **BACK** Button to go back to Dashboard
+
+If the Tool is Already Added and Clicked on Edit Button, then follow the below procedure:
+
+•	Modify the Search Region (if required).
+
+•	Click on **RUN** Button to run the Pattern in the Search Region.
+
+•	View the Pattern Found Results.
+
+•	Click on **BACK** Button to go back to Dashboard.
+
+Additionally, there are many settings for the “PatternMatchMax” Tool.
+
+**Result:** The Result will be PASS or FAIL based on conditions, i.e., Pattern Count Min and Max. The Results contains the details such as Center-X, Center-Y, Angle, Score of the pattern.
+
+The Settings depends on type of application on how pattern has to be trained and searched in the image.
+
+###**2.9.2 SURFACE DISTANCE**
+
+<div style="text-align: center;">
+<img src="path/image-28.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Click on **SELECT REGION**  Button. Modify the Regions.
+
+•	Edit the Min and Max Values for the “Distance Final Value” Decision.
+
+•	Click on **RUN** Button to get the Results. 
+
+•	View the Results – the Distance in mm between Two Regions.
+
+•	Click on **BACK**  Button to go back to Dashboard.
+
+**Fixtured Tool:** Select ‘ImageSource’ or ’01-reference’ based on requirements.
+
+**ImageSource :**Load actual image which is captured from camera.
+
+**01-reference :** Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).
+
+**Select A Region:** Select the Region as RECT_ROTATED or ELLIPSE. 
+
+**Select Region Button:** Click on this button to add the new Regions on the image and modify the regions where we need to measure the distance.
+
+**Reference Type:** Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement which is relevant for Green-Color Region.
+
+**Region Type:** Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement which is relevant for Blue-Color Region where we need to calculate the distance w.r.t reference.
+
+**Offset:** Enable offset and enter the Min and Max Offset Values – if it is enabled, then the measurement will be measured in between the offset values (mm) only.
+
+**Result:** The Result is PASS or FAIL based on conditions, i.e., Distance Final Value Min and Max. The Results contains details such as Distance in mm between selected two regions.
+
+The Settings depends on type of application on how measurement has to be done between two regions.
+
+###**2.9.3 PEAK**
+
+<div style="text-align: center;">
+<img src="path/image-29.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Click on **SELECT REGION**  Button. Modify the Regions.
+
+•	Edit the Min and Max Values for the “Peak Final Value” Decision.
+
+•	Click on **RUN** Button to get the Results.
+
+•	View the Results – the Distance in mm at the selected region.
+
+•	Click on **BACK** Button to go back to Dashboard.
+
+**Fixtured Tool:** Select ‘ImageSource’ or ’01-reference’ based on requirements.
+
+*ImageSource :* Load actual image which is captured from camera.
+
+*01-reference :* Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).
+
+**Measurement Type:** Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement.
+
+**Select A Region:** Select the Region as RECT_ROTATED or ELLIPSE.
+
+**Select Region Button:** Click on this button to add the new Region on the image and modify the region where we need to measure the peak value.
+
+**Result:** The Result will be PASS or FAIL based on conditions, i.e., Peak Final Value Min and Max. The Results contains the details such as Peak in mm.
+
+The Settings depends on type of application on the peak value has to be measured.
+
+###**2.9.4 BLOB**
+
+<div style="text-align: center;">
+<img src="path/image-30.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Click on **SELECT REGIONS** Button. Modify the Regions.
+
+•	Enter the Distance Min and Max Values.
+
+•	Enter the Blob Count Min and Max Values.
+
+•	Click on **RUN** Button to get the Results. 
+
+•	View the Results – (Center-X, Center-Y in mm) and Blob Area at the selected region.
+
+•	Click on **BACK** Button to go back to Dashboard.
+
+**Fixtured Tool:** Select ‘ImageSource’ or ’01-reference’ based on requirements.
+
+*ImageSource :* Load actual image which is captured from camera.
+
+*01-reference :* Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).
+
+**Select A Region:** Select the Region as RECT_ROTATED or ELLIPSE.
+
+**Select Region Button:** Click on this button to add the new Region on the image and modify the region where we need to measure the peak value.
+
+The Yellow-Color Region is used to calculate the peak value at the selected region. The Blue-Color Region is used to find the blob with the settings.
+
+**Distance (mm):** Enter the Min Max distance in mm where the blob has to be identified.
+
+**Blob Area (px):** Enter the Min Max blob area in pixels where the blob has to be identified.
+
+**Circularity, Num Holes:** Enter the Min Max of blob circularity and number of holes where the blob has to be filtered.
+
+**Result:** The Results contains the details such as Blob Center-X, Center-Y in mm and Blob Area.
+
+The Settings depends on type of application on how blob tool has to be calculated.
+
+###**2.9.5 WIDTH**
+
+<div style="text-align: center;">
+<img src="path/image-31.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Click on **SELECT REGION** Button. Modify the Regions.
+
+•	Enter the Width Min and Max Values.
+
+•	Click on **RUN** Button to get the Results. 
+
+•	View the Results – Width in mm.
+
+•	Click on **BACK** Button to go back to Dashboard.
+
+**Fixtured Tool:** Select ‘ImageSource’ or ’01-reference’ based on requirements.
+
+*ImageSource :* Load actual image which is captured from camera.
+
+*01-reference :* Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).
+
+**Measurement Type:** Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement.
+
+**Select A Region:** Select the Region as RECT_ROTATED.
+
+**Select Region Button:** Click on this button to add the new Region on the image and modify the region where we need to measure the width.
+
+The Green-Color Region and Blue-Color Region used to calculate the width between two regions.
+
+**Distance (mm):** Enter the Min Max distance in mm where the width has to be identified.
+
+**Polarity, Priority, Num Points:** Select the values for the Edge1 and Edge2, where the edge location has to be identified.
+
+**Result:** The Result will be PASS or FAIL based on conditions, i.e., Width Min and Max. The Results contains the details such as Width in mm.
+
+The Settings depends on type of application on how width tool has to be calculated.
+
+###**2.9.6 PIXEL COUNTER**
+
+<div style="text-align: center;">
+<img src="path/image-32.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Click on **SELECT REGION** Button. Modify the Regions.
+
+•	Enter the Set Thresh Min and Max Values.
+
+•	Click on **RUN** Button to get the Results. 
+
+•	View the Results – Pixel Counter Value.
+
+•	Click on **BACK** Button to go back to Dashboard.
+
+**Fixtured Tool:** Select ‘ImageSource’ or ’01-reference’ based on requirements.
+
+*ImageSource :* Load actual image which is captured from camera.
+
+*01-reference :* Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).
+
+**Select A Region:** Select the Region as RECT_ROTATED or ELLIPSE.
+
+**Select Region Button:** Click on this button to add the new Region on the image and modify the region where we need to measure the summation of pixel gray values count in region.
+
+**Set Thresh:** Enter the Min Max gray scale values in where the pixel counter values has to be taken into consideration for calculating pixel counter.
+
+**Set Filter, Set Polarity, Set Area, Circularity, Compactness:** Select the Min and Max Values where the region has to be filtered.
+
+**Result:** The Result will be PASS or FAIL based on conditions, i.e., PixelCounter Value Min and Max. The Results contains the details such as Summation of all Pixel Gray Scale values which are in the range of Thresh Min and Max.
+
+The Settings depends on type of application on how width tool has to be calculated.
+
+###**2.9.7 COMBINE RESULTS**
+
+<div style="text-align: center;">
+<img src="path/image-33.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Select the Tool from the List.
+
+•	Click on (**+**) Button to add the Tool to List.
+
+•	Click on **RUN** Button to get the Results.
+
+•	View the Results – PASS or FAIL.
+
+•	Click on **BACK** Button to go back to Dashboard.
+
+**Select A Tool:** Add/Delete the Configured Tools for Inspection which has to give combined results.
+
+**Result:** The Result will be PASS or FAIL based on conditions, i.e., if any one of the tool is failed, then the final result will be FAIL or the final result will be PASS.
+
+The Settings depends on type of application on how width tool has to be calculated.
+
+##**2.10 COMMUNICATIONS**
+
+Accessible for: **Administrator**.
+
+<div style="text-align: center;">
+<img src="path/image-34.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Select the SKU Number.
 
 •	Select the Communication String from the Tool using Drop-Down Box.
 
-•	Click on "**+**" Button to add the String to the Communication List.
+•	Click on (**+**) Button to add the String to the Communication List.
 
-•	Select the Delimiter from the Drop-Down Box. 
+•	Select the Delimiter from the Drop-Down Box.
 
 •	Click on **SAVE** Button to Save the Communication String relevant to SKU.
 
-•   Click the **BACK** button to return to the dashboard screen.
+•	Click on **BACK** Button to go back to Dashboard.
 
 For All Inspection Tools, all the result details will be available in this communication string to configure.
-The configured communication string will be separated using “delimiter” when the communication string is sent through the TCP Server.The configured communication string will be sent through the ModbusTCP to the respective modbus registers.
- 
 
-### **MODBUS TCP**
+The configured communication string will be separated using “delimiter” when the communication string is sent through the TCP Server.
 
-Accessible for: **Administrator** and **Maintenance**
-
-![alt text](path/image-08.png)
-
-• Select the **ModbusTCP** option, and the application will act as the Modbus TCP client, while the PLC will act as the Modbus TCP server.
-
-• The IP address, port number, start address, and multiplication factor (for digital values) will be configured in the settings.
-
-• The heartbeat interval for the Quality Inspection application to monitor the Modbus TCP register for read/write operations is 30 milliseconds.
-
-Handshaking of Registers between the PLC and ModbusTCP in the Quality Inspection Application is explained below.
-
-![alt text](path/image-29.png)
- 
-The standard Modbus registers are pre-configured with their register locations, but these locations can be reconfigured. This option is accessible only to administrators.
-
-**COMMUNICATION:** This is used to establish a heartbeat communication between the Quality Inspection application and the PLC. Every 5 seconds, the application writes a register value of '1', and the PLC checks if the value is '1'. If the value is not '1' within the heartbeat period, the PLC will detect a communication issue. The PLC will then write a register value of '2'.
-
-**SKUID:**  To select an SKU from the PLC, the PLC will write the SKU ID to the SKUID register location. Refer to SKU Management to find the SKUID for each SKU.
-
-**SKUID_FEEDBACK:** The application will monitor the SKUID, and if a valid SKUID is read from the SKUID register location, the respective SKU will be loaded into the application (all camera and inspection parameters will be loaded and ready for inspection). Once the SKU is successfully loaded, the application will write the same SKUID value to the SKUID_FEEDBACK register. When the PLC reads this value, it will reset the register to '0'.
-
-*Example :* The PLC will send the value '5' to the SKUID register. The application will then look for and load the SKU with SKUID '5'. Upon successful loading of the SKU, the value '5' will be sent back to the SKUID_FEEDBACK register location.
-
-**TRIGGER:**  To start the inspection of an object, the PLC will write the value '1' to the TRIGGER register location.
-
-**TRIGGER_FEEDBACK:** Once the application reads the TRIGGER register with the value '1', the TRIGGER register will be reset to '0', and the TRIGGER_FEEDBACK register will be written with '1'. The PLC will receive the TRIGGER_FEEDBACK and reset its value to '0'.
-
-**CAMERA_STATUS:** The application will write the value to the CAMERA_STATUS register. The PLC will monitor this status and perform the process steps according to its automation cycle.
-
-    Register Value as 3 => if the inspection is in progress.
-    Register Value as 2 => ready to take the trigger
-    Register Value as 0 => camera is not yet ready
-
-**RESULT:** The application will write the value to the RESULT register. The PLC will monitor this result and perform the process steps according to its automation cycle.
-
-    Register Value as 2 => if the Result is FAIL.
-    Register Value as 1 => if the Result is PASS.
-    Register Value as 0 => if the Result is Not Yet Ready.
-
-**Location of MODBUS Registers:**
-
-Register Location: Start Address [Refer Settings] + Register Location
-
-![alt text](path/image-25.png)
-
-![alt text](path/image-26.png)
-
-To simulate Modbus TCP, you can use the Modbus Simulator application, which can be downloaded from the internet.
-
-![alt text](path/image-27.png)
-
-•	Open Modbus Server in the **PLC**.
-
-•	Click the **CONNECT** button. If Modbus is enabled on the PLC, the Modbus TCP Client application will connect; otherwise, it will not connect.
-
-•	Write Registers: Select the Value and Click on **ADD** Button.
-
-•	Write Registers: Click on **WRITE MULTIPLE REGISTERS** Button.
-
-•	Read Registers: Click on **READ MULTIPLE REGISTERS** Button.
-
-•	The values that are written should be readable..
-
-•	Click on **DISCONNECT** button.
-
-•	Click the **BACK** button to return to the dashboard.
+The configured communication string will be sent through the ModbusTCP to the respective modbus registers.
 
 
-
-### **TCP SERVER**
-
-Accessible for: **Administrator** and **Maintenance**
-
-![alt text](path/image-09.png)
-
-Select the **TCP Server** option, and the application will act as a TCP server, while the PLC will act as a TCP client. The following are the TCP server commands used to control the application in the inspection screen:
-
-(1) **Reset the Job**
-    Syntax: SKU_RESET
-    Response: SUCCESS or FAILURE
-
-(2) **Get the List of Jobs Available**
-    Syntax: SKU_LIST
-    Response: Provides a list of jobs, separated by commas.
-
-(3) **Select the Job** – 3 Ways to Load Job
-    Syntax: SKUCODE_jobName
-    Example: SKUCODE_newjob1
-    Response: SUCCESS or FAILURE
-
-    Syntax: SKUID_jobID
-    Example: SKUID_001
-    Response: SUCCESS or FAILURE
-
-    Syntax: SKUIDCODE _jobID-jobName
-    Example: SKUIDCODE_001-newjob1
-    Response: SUCCESS or FAILURE
-    Action: The Application will load the respective SKU Settings to the inspection.
-
-(4) **Trigger Image**
-    Syntax: TRIGGER_filename
-    Example: TRIGGER_range-image_00001
-    Response: Data which is configured in Communications
-
-(5) **Trigger Camera** 
-    Syntax: TRIGGER
-    Response: Data which is configured in Communications
-
-To simulate a TCP client, you can use the **Hercules** application, which can be downloaded from the internet.
-
-![alt text](path/image-28.png)
-
-•	Click on **START SERVER** button.
-
-•	Open the **Hercules** application and launch the **TCP Client**. Enter the IP address as '127.0.0.1' or the IP address displayed on the TCP Server screen.
-
-•	Enter the port number configured in the TCP server into the TCP client.
-
-•	Click on **Connect Button** in the TCP Client.
-
-•	Send some data from the TCP client and check if it is received by the TCP server.
-
-•	Send some data from TCP Server and check if it is received by the TCP Client.
-
-•	If data transmission between the **TCP client** and **TCP server** is successful, we can confirm that the TCP server is working as expected.
-
-•	Click on **STOP SERVER** button.
-
-•	Click on **BACK** button to return to the Dashboard.
-
-
-## **TEACHING PART**
-
-Accessible for: **Administrator**
-
-![alt text](path/image-11.png)
-
-### **TEACH IMAGE** 
-
-![alt text](path/image-12.png)
-
-## **INSPECTION**
+##**2.11 INSPECTION**
 
 Accessible for: **Administrator**, **Maintenance** and **Operator**.
 
-![alt text](path/image-13.png)
+<div style="text-align: center;">
+<img src="path/image-35.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
-•	Select the **SKU number** manually, or wait for the PLC to automatically select it through ModbusTCP communication.
+1. Select the SKU number manually or wait for the PLC to automatically select the SKU Number through ModbusTCP Communication.
 
-•	The settings linked to the selected SKU will be loaded into the application
+2. The Settings which are linked with the respective SKU will be loaded to the Application.
 
-•	**Administrator/Maintenance:** Will have an option to manually load the image to inspect the image.
+3. Administrator/Maintenance: Will have an option to manually load the image to inspect the image.
 
-•	**Operator:** Must wait for the PLC to trigger the camera through ModbusTCP.
+4. Operator: Will have to wait for the PLC trigger to the camera through ModbusTCP.
 
-•	Once the image is ready, the inspection will occur automatically and update the following:
+5. Once the Image is ready the inspection will happen automatically and update the following:
 
-    o   A new image with graphics will appear in the center of the screen.
+    1. New Image with graphics will be updated to the Center of the Screen.
 
-    o   The inspection results for all tools will be updated in the tree view on the right side of the screen.
+    2. The Inspection Results for all Tools are updated to Tree view on the Right side of the Screen.
 
-    o   The PASS/FAIL counter will be updated at the bottom right of the screen.
+    3. The Counter will be updated with the PASS/FAIL Counter at the Bottom Right of the Screen.
 
-    o   The trigger number and cycle time details will be updated at the bottom right of the screen.
+    4. The Details will be updated with the Trigger Number and Cycle Time at the Bottom Right of the Screen.
 
-    o   A message to the operator about the application status will be displayed at the top center of the screen.
- 
-## **ALARMS**
+    5. The Message to the Operator on the status of the application is updated in the Top Center of the Screen.
+
+
+##**2.12 ALARMS**
 
 Accessible for: **Administrator**, **Maintenance** and **Operator**.
 
-![alt text](path/image-16.png)
+<div style="text-align: center;">
+<img src="path/image-36.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 Alarms will display all log information for the application.
 
@@ -478,12 +713,13 @@ Alarms will display all log information for the application.
 
 •	Click the  **BACK** Button to return to the Dashboard.
 
-
-## **RESULTS**
+##**2.13 RESULTS**
 
 Accessible for: **Administrator**, **Maintenance** and **Operator**.
 
-![alt text](path/image-14.png)
+<div style="text-align: center;">
+<img src="path/image-37.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
 
 •	Select the **SKU Number**.
 
@@ -503,14 +739,16 @@ Accessible for: **Administrator**, **Maintenance** and **Operator**.
 
 •	The metadata information about the inspected object is available at the bottom left corner of the screen.
 
+ The Result will be PASS or FAIL based on conditions, i.e., Blob Count Min and Max. 
 •	Click the **BACK** Button to return to the Dashboard.
 
+##**2.14 REPORTS**
 
-## **REPORTS**
+<div style="text-align: center;">
+<img src="path/image-38.png" alt="alt text" style="width: 600px; height: auto;"> 
+</div>
 
 Accessible for: **Administrator**, **Maintenance** and **Operator**.
-
-![alt text](path/image-15.png)
 
 •	Select the **SKU Number**.  
 
@@ -538,39 +776,196 @@ Accessible for: **Administrator**, **Maintenance** and **Operator**.
 
 •	Select the trigger details to view the history of all inspection results in graph form.
 
+##**2.15 TCP SERVER**
 
-## **EDIT IMAGE SETTINGS**
+Accessible for: **Administrator** and *Maintenance*
+
+When we select TCP Server Option, then Application will act as TCP Server and the PLC should act as TCP Client.
+
+Following are TCP Server Commands used to control application in Inspection Screen:
+
+(1) **Reset the Job**
+
+    Syntax: SKU_RESET
+    Response: SUCCESS or FAILURE
+
+(2) **Get the List of Jobs Available**
+
+    Syntax: SKU_LIST
+    Response: Provides the List of Jobs with comma separated
+
+(3) **Select the Job – 3 Ways to Load Job**
+
+    Syntax: SKUCODE_jobName
+    Example: SKUCODE_newjob1
+    Response: SUCCESS or FAILURE
+
+    Syntax: SKUID_jobID
+    Example: SKU_001
+    Response: SUCCESS or FAILURE
+
+    Syntax: SKUIDCODE _jobID-jobName
+    Example: SKU_001-newjob1
+    Response: SUCCESS or FAILURE
+    Action: The Application will load the respective SKU Settings to the inspection.
+
+(4) **Trigger Image**
+
+    Syntax: TRIGGER_filename
+    Example: TRIGGER_range-image_00001
+    Response: Data which is configured in Communications
+
+(5) **Trigger Camera**
+
+    Syntax: TRIGGER
+    Response: Data which is configured in Communications
+    
+To simulate TCP Client, we use Hercules Application which can be downloaded from internet.
+
+<div style="text-align: center;">
+<img src="path/image-39.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Click on START SERVER button.
+
+•	Open Hercules Application and Open TCP Client. Enter the IP Address as “127.0.0.1” or the IP Address which is visible in the TCP Server Screen.
+
+•	Enter Port Number which is configured in the TCP Server in the TCP Client.
+
+•	Click on Connect Button in the TCP Client.
+
+•	Send some data from TCP Client and check if the data is received in TCP Server.
+
+•	Send some data from TCP Server and check if the data is received in TCP Client.
+
+•	If the Data sending and receiving is occurring fine between TCP Client and TCP Server, then we can confirm that the TCP Server is working fine as expected.
+
+•	Click on STOP SERVER button.
+
+•	Click on **BACK** button to go back to Dashboard.
+
+##**2.17 MODBUS TCP**
 
 Accessible for: **Administrator** and **Maintenance**
 
-•	Select the **SKU Number**.  
+When we select ModbusTCP Option, then Application will act as Modbus TCP Client and the PLC should act as Modbus TCP Server.
+
+IP Address, Port Number, Start Address, and Multiplication Factor (for digital values): Will be configured in the Settings.
+
+Heart-beat for the Inspect3D Application to monitor ModbusTCP Register to write/read is 30 milliseconds.
+
+Handshaking of Registers between the PLC and ModbusTCP in the Inspect3D Application is explained below.
+
+<div style="text-align: center;">
+<img src="path/image-40.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
+
+The Standard Modbus Registers are pre-configured with the Register Locations. It is possible to reconfigure the Register Locations. This is accessible only for Administrator.
+
+**COMMUNICATION :** It is used to establish a hear-beat kind of communication between the Inspect3D Application and the PLC. For every 5 Seconds, the Application will write the register value as ‘1’ and the PLC will check if the value is ‘1’ or not. If the value is not ‘1’ within the heart-beat time, then PLC can know that there is some problem with communication. PLC also will write the register value as ‘2’.
+
+**SKUID:**  When we need to select an SKU from the PLC, then PLC will write to SKUID Register location with a number (SKUID). Please refer SKU Management to get to know the SKUID of each SKU.
+
+**SKUID_FEEDBACK:** The Application will monitor the SKUID and if the Valid SKUID is read in the SKUID Register location, then the respective SKU will be loaded to the application (all the camera and inspection parameters are loaded and ready to inspect). Once the SKU is successfully loaded, then the SKUID_FEEDBACK register will be written with the same ‘SKUID Value’ by the Application. Once the PLC will read the same value in the register, then PLC will reset this register to ‘0’.
+
+*Example :* PLC will send the value as ‘5’ to the SKUID register, then Application will look for the load the SKUID which is ‘5’. Upon successful loading of SKU, then Value ‘5’ will be sent back to the SKUID_FEEDBACK Register Location.
+
+**TRIGGER:**  When we need to start the inspection for an object, then PLC will write to TRIGGER Register location with a number ‘1’.
+
+**TRIGGER_FEEDBACK:** Once the Application read this register TRIGGER with value ‘1’, then the TRIGGER Register will be reset with number ‘0’ and TRIGGER_FEEDBACK will be written as ‘1’. The PLC will receive the TRIGGER_FEEDBACK and reset the Value with ‘0’.
+
+**CAMERA_STATUS:** The CAMERA_STATUS Register value will be written by the Application. The PLC will monitor this camera status and perform the process steps as per their automation cycle.
+
+    Register Value as 3 => if the inspection is in progress.
+    Register Value as 2 => ready to take the trigger
+    Register Value as 0 => camera is not yet ready
+
+**RESULT:** The RESULT Register value will be written by the Application. The PLC will monitor this result and perform the process steps as per their automation cycle.
+
+    Register Value as 2 => if the Result is FAIL.
+    Register Value as 1 => if the Result is PASS.
+    Register Value as 0 => if the Result is Not Yet Ready.
+
+**Location of MODBUS Registers: **
+
+Register Location: Start Address [Refer Settings] + Register Location
+
+| **REGISTER NAME**    | **REGISTER LOCATION**                |
+|-----------------------|-------------------------------------|
+| COMMUNICATION         | 0 (configurable between 0-19)       |
+| SKUID                 | 1 (configurable between 0-19)       |
+| SKUID_FEEDBACK        | 2 (configurable between 0-19)       |
+| TRIGGER               | 3 (configurable between 0-19)       |
+| TRIGGER_FEEDBACK      | 4 (configurable between 0-19)       |
+| CAMERA_STATUS         | 10 (configurable between 0-19)      |
+| RESULT                | 11 (configurable between 0-19)      |
+
+
+
+| **CUSTOM-REGISTER NAME**           | **REGISTER LOCATION**       |
+|------------------------------------|-----------------------------|
+| String1 Configured in Communication |    20                      |
+| String2 Configured in Communication |    21                      |
+| String3 Configured in Communication |    22                      |
+| String4 Configured in Communication |    23                      |
+| String5 Configured in Communication |    24                      |
+| String6 Configured in Communication |    25                      |
+
+To simulate Modbus TCP, we use Modbus Simulator Application which can be downloaded from internet.
+
+<div style="text-align: center;">
+<img src="path/image-41.png" alt="alt text" style="width: 750px; height: auto;"> 
+</div>
+
+•	Open Modbus Server in the PLC.
+
+•	Click on CONNECT button. If the Modbus in the PLC is opened, then the Modbus TCP Client Application will Connect otherwise it will NOT Connect.
+
+•	Write Registers: Select the Value and Click on ADD Button.
+
+•	Write Registers: Click on WRITE MULTIPLE REGISTERS Button.
+
+•	Read Registers: Click on READ MULTIPLE REGISTERS Button.
+
+•	The Values which are written should be able to read.
+
+•	Click on DISCONNECT button.
+
+•	Click on **BACK** button to go back to Dashboard.
+
+##**2.17 EDIT IMAGE SETTINGS**
+
+Accessible for: **Administrator** and **Maintenance**
+
+<div style="text-align: center;">
+<img src="path/image-42.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+•	Select the SKU Number.
 
 •	Click on **LOAD SETTINGS** Button.
 
-•	Click to edit the “MIN VALUE NEW” and “MAX VALUE NEW” for each inspection tool name.These Values will decide for PASS or FAIL for the Inspection Result for individual tool.
+•	Click to edit the “MIN VALUE NEW” and “MAX VALUE NEW” for each inspection tool name.
+These Values will decide for PASS or FAIL for the Inspection Result for individual tool.
 
 •	View the “MIN VALUE OLD” and “MAX VALUE OLD” to view existing settings value.
 
-•	Click on **SAVE**  button to save the Image Settings.
+•	Click on **SAVE** button to save the Image Settings.
 
-•	Click on **BACK** button to return to the Dashboard.
-
-
-
-..................x.................................x.................................x...............................x................................x..................................x.............................x..........................x
+•	Click on **BACK** button to go back to Dashboard.
 
 
-## **MAINTENANCE and TROUBLESHOOTING**
+##**3.MAINTENANCE and TROUBLESHOOTING**
 
 ***Maintenance :***
 
-•	The inspection results are stored in the 'Data Location' folder. Please ensure that at least 25% of free space is always available on the respective drive.
+•	The inspection results are stored in the 'Data Location' folder.
+
+ Please ensure that at least 25% of free space is always available on the respective drive.
 
 •	If less than 5% of free space is available on the application installation drive (ideally the C drive) or on the 'Data Location' folder drive, the application will not open.
 
-
  ***TROUBLESHOOTING :***
-
 
 •	There are three types of messages that will appear in a dialog box.
 
