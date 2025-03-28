@@ -1,0 +1,4 @@
+.md-header-nav .md-logo img {
+    width: 400px;  /* Adjust this value as needed */
+    height: auto;  /* Keep aspect ratio */
+}
