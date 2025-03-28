@@ -954,7 +954,6 @@ These Values will decide for PASS or FAIL for the Inspection Result for individu
 
 •	Click on **BACK** button to go back to Dashboard.
 
-
 ##**3.MAINTENANCE and TROUBLESHOOTING**
 
 ***Maintenance :***
