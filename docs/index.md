@@ -16,7 +16,6 @@ The 3D Data will be Inspected and the Application will shows the Results.
 <img src="path/image-01.png" alt="alt text" style="width: 500px; height: auto;"> 
 </div>
 
-
 **HARDWARE :**
 
 1. MONITOR :
@@ -932,6 +931,10 @@ To simulate Modbus TCP, we use Modbus Simulator Application which can be downloa
 •	Click on DISCONNECT button.
 
 •	Click on **BACK** button to go back to Dashboard.
+
+**For more details click on the below :**
+
+[ModbusTCP Online Manual](https://rokamtechnology.github.io/modbusTCP_Manual/)
 
 ##**2.17 EDIT IMAGE SETTINGS**
 
