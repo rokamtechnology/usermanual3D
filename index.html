@@ -1,0 +1,1361 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.10">
+    
+    
+      
+        <title>ROKAM</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inspect-3d" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="ROKAM" class="md-header__button md-logo" aria-label="ROKAM" data-md-component="logo">
+      
+  <img src="assets/images/logi.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ROKAM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              INSPECT 3D
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="dark-blue" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  INSPECT 3D
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="ROKAM" class="md-nav__button md-logo" aria-label="ROKAM" data-md-component="logo">
+      
+  <img src="assets/images/logi.png" alt="logo">
+
+    </a>
+    ROKAM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    INSPECT 3D
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    INSPECT 3D
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. OBJECTIVES
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-software-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SOFTWARE APPLICATION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 LOGIN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 DASHBOARD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 SETTINGS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 USER management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-sku-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 SKU MANAGEMENT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-marking-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 MARKING ITEMS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-camera-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 CAMERA MANAGEMENT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-image-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 IMAGE MANAGEMENT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-teach-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 TEACH IMAGE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.9 TEACH IMAGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#291-pattern-match-max" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.1 PATTERN MATCH MAX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#292-surface-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.2 SURFACE DISTANCE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#293-peak" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.3 PEAK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#294-blob" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.4 BLOB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#295-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.5 WIDTH
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#296-pixel-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.6 PIXEL COUNTER
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#297-combine-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9.7 COMBINE RESULTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#210-communications" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.10 COMMUNICATIONS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#211-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.11 INSPECTION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#212-alarms" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.12 ALARMS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.13 RESULTS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#214-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.14 REPORTS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#215-tcp-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.15 TCP SERVER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#217-modbus-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.17 MODBUS TCP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#217-edit-image-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.17 EDIT IMAGE SETTINGS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3maintenance-and-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.MAINTENANCE and TROUBLESHOOTING
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="inspect-3d"><strong>INSPECT 3D</strong></h1>
+<p><strong>INTRODUCTION</strong></p>
+<p>Our application specialize in advanced automation technologies such as surface detect inspection, OCR/OCV (Optical Character Recognition/Optical Character Verification), and critical measurements.These technologies are integrated into our specialized application, <strong>Inspect3D</strong>, which is designed to enhance precision and operational efficiency in various industrial processes.</p>
+<h2 id="1-objectives"><strong>1. OBJECTIVES</strong></h2>
+<p>This document describes the procedure on the usage for the Tyre Side Wall Stamping Inspection Application.</p>
+<p>The 3D Camera is mounted to the Robot 6th Axis and Scan the Sidewall of the Tyre to capture the 3D Data of the Sidewall of the Tyre.</p>
+<p>The 3D Data will be Inspected and the Application will shows the Results.</p>
+<div style="text-align: center;">
+<img src="path/image-01.png" alt="alt text" style="width: 500px; height: auto;"> 
+</div>
+
+<p><strong>HARDWARE :</strong></p>
+<ol>
+<li>
+<p>MONITOR :</p>
+<div class="highlight"><pre><span></span><code>Connectivity: HDMI or DisplayPort
+
+Aspect Ratio: 16:9
+
+Resolution:
+
+[Full HD (1920x1080) with 100% Display Scaling]   or
+
+[4K (3840x2160) with 200% Display Scaling]
+</code></pre></div>
+</li>
+<li>
+<p>DESKTOP PC :</p>
+<div class="highlight"><pre><span></span><code>Processor: Intel or AMD
+
+Cores: Minimum 8 Cores with Minimum 16 Logical Processors
+
+Generations: Intel (12th Gen or Above); AMD (Ryzen5 or Above)
+
+Integrated Graphics: Intel UHD/XeGraphics or AMD Ryzen with Radeon Graphics
+
+SSD: 1TB; RAM: 16GB DDR4
+
+Ethernet: Intel Gigabit Ethernet Port (I219-V or Equivalent)
+
+USB3.0: Intel USB3.0 xHCI Compliant Host Controller Type-A
+</code></pre></div>
+</li>
+</ol>
+<p><strong>SOFTWARE:</strong></p>
+<p>OPERATING SYSTEM :</p>
+<div class="highlight"><pre><span></span><code>    Windows 10 Pro or Windows 11 Pro; 64-Bit (x64)
+</code></pre></div>
+<p>QUALITY INSPECTION APPLICATION :</p>
+<div style="text-align: center;">
+<img src="path/image-02.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>The full installation, including the operating system, will require approximately 50 GB of space on the C drive for the new PC.</p>
+<h2 id="2-software-application"><strong>2. SOFTWARE APPLICATION</strong></h2>
+<p>Open the Application which is located in Desktop.</p>
+<div style="text-align: center;">
+<img src="path/image-03.png" alt="alt text" style="width: 85px; height: auto;"> 
+</div>
+
+<p>Once the Application is opened, then Application will start. The Below Screen will appear for few seconds which will load all the settings required for the application.</p>
+<div style="text-align: center;">
+<img src="path/image-04.png" alt="alt text" style="width: 500px; height: auto;"> 
+</div>
+
+<p>If there are any warnings or error, the respective dialog box will be shown. 
+After this screen is completed, the Login Screen will open.</p>
+<h2 id="21-login"><strong>2.1 LOGIN</strong></h2>
+<div style="text-align: center;">
+<img src="path/image-05.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<div class="highlight"><pre><span></span><code>1.Click the i icon to open the User Manual.
+
+2.View the application version number in the bottom-right corner of the screen.
+</code></pre></div>
+<p><strong>Enter your username and password on the login screen.</strong></p>
+<div style="text-align: center;">
+<img src="path/image-06.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
+
+<div class="highlight"><pre><span></span><code>1.Click the Login button to access the application.
+
+2.Click the Exit button to close the application.
+
+3.The logged-in username will appear in the top-left corner of every screen from Dasboard.
+</code></pre></div>
+<p><strong>Contact the administrator for a valid username and password if needed.</strong> </p>
+<div style="text-align: center;">
+<img src="path/image-07.png" alt="alt text" style="width: 300px; height: auto;"> 
+</div>
+
+<h2 id="22-dashboard"><strong>2.2 DASHBOARD</strong></h2>
+<div style="text-align: center;">
+<img src="path/image-08.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>The dashboard contains all options available in this application. Some options are accessible based on the user type, as explained in the User Management section. </p>
+<p><strong>Settings:</strong> All the Settings for the Application are editable.</p>
+<p><strong>User Management:</strong> Add/Delete/View the users for this application.</p>
+<p><strong>SKU Management:</strong> Add/Delete/View the SKUs for this application.</p>
+<p><strong>Marking Items:</strong> Add/Delete/View the Marking Items for each SKU</p>
+<p><strong>Camera Management:</strong> Configure the Camera for each SKU based on the requirement</p>
+<p><strong>Image Management:</strong> Delete/View the Images which are captured as reference by the Camera Management.</p>
+<p><strong>Teach Image:</strong> Edit the Inspection Parameters for each SKU</p>
+<p><strong>Communications:</strong> Add/Delete the communication parameters required to send inspection parameters for each SKU to the other device.</p>
+<p><strong>Inspection:</strong> Inspect the Components based on the configured Settings for each SKU.</p>
+<p><strong>Alarms:</strong> View/Export the Alarms that are logged in this Application.</p>
+<p><strong>Results:</strong> View the Result (PDF, Image, Individual Results) for each inspection Components</p>
+<p><strong>Reports:</strong> View all the Results in a Single View with Statistical Analysis.</p>
+<p><strong>TCPServer:</strong> Sample Application to Test and Check if the TCP Server is working properly with the TCP Client.</p>
+<p><strong>ModbusTCP    :</strong> Sample Application to Test and Check if the ModbusTCP is working properly with the TCP Client.</p>
+<p><strong>Edit Image Settings:</strong> Modify the Settings for all Inspection Parameters for PASS/FAIL in single screen.</p>
+<p><strong>camera diagnostics:</strong> This option is used to check the outputs or inputs given to the camera.</p>
+<p><strong>Image diagnotics:</strong> to view the point cloud file of the scanned component.</p>
+<h2 id="23-settings"><strong>2.3 SETTINGS</strong></h2>
+<div style="text-align: center;">
+<img src="path/image-09.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p><strong>Data Location:</strong> Click on BrowseFolder Button and Select the Folder where we need to save the Inspection Results.</p>
+<p><strong>TCP Server:</strong> Enter the Credentials of the TCP Server Settings which is used for the Communication to send the data from Application to the other TCPClient Device (PLC, PC, etc.)</p>
+<p><strong>Modbus TCP:</strong> Enter the Credentials of the ModbusTCP Settings which is used for the Communciation to send the data from Application to the other Modbus Device (PLC, PC, etc.)</p>
+<p><em>Note :</em> Only one Communication Protocol can be enabled, either TCPServer or ModbusTCP.</p>
+<p><strong>Auto Delete Results:</strong> Enable the Checkbox to delete the results automatically during startup of application.
+If this option is enabled, then during Startup of the Application, if the Available Space in the “Results Location Drive” is Less than 25% of that respective “Full Drive Capacity”, then the Application will Delete only 1 Inspection Result on the Starting Inspection Date for all available SKUs.</p>
+<p><strong>Scanner:</strong> Enable or Disable the Barcode Scanner Functionality. This can be used to Select the SKU automatically by scanning the barcode</p>
+<p><strong>Webcam:</strong> Enable or Disable the Webcam Functionality. This can be used to view the user who is logging in the application and capture the picture of the same to application data.</p>
+<p><strong>Expand Tree View:</strong> Enable or Disable this Functionality so that we can view the results in expanded mode or condensed mode in the inspection view.</p>
+<p><strong>Save Original Image:</strong> Enable or Disable this Functionality, so that if we need to save the original image which is been captured during inspection for every component.</p>
+<p><strong>Save Original Image Format:</strong> Select one among PNG, JPG, TIFF so that the original image has to be saved with different file format, which will be helpful based on different applications.</p>
+<div style="text-align: center;">
+<img src="path/image-10.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p><strong>Display Cycle Time in [ms]:</strong> Enable or Disable this Functionality, so that we display the Cycle Time in the Inspection view in milliseconds or in seconds.</p>
+<p><strong>OCR MODEL:</strong></p>
+<div class="highlight"><pre><span></span><code>Detection Model: Browse a new Detection Model that has to be used by this application.
+
+Recognition Model: Browse a new Recognition Model that has to be used by this application.
+
+Update Model: Update the selected Detection &amp; Recognition Model to the application
+
+Save: Click on Save Button to save the Settings.
+
+Back: Click on Back Button to go back to Dashboard Screen.
+</code></pre></div>
+<h2 id="24-user-management"><strong>2.4 USER management</strong></h2>
+<div style="text-align: center;">
+<img src="path/image-11.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>You can <strong>add new users</strong>, <strong>delete existing users</strong>, and <strong>view existing users</strong>.</p>
+<p>To add a <strong>new user</strong>, enter a username (up to 8 characters), a password (up to 8 characters), and select a role: <strong>Administrator</strong>, <strong>Maintenance</strong>, or <strong>Operator</strong>. </p>
+<p>Then, click the <strong>Add User</strong> button.</p>
+<p><strong>Role Accessibility:</strong></p>
+<div style="text-align: center;">
+<img src="path/image-18.png" alt="alt text" style="width: 600px; height: auto;"> 
+</div>
+
+<h2 id="25-sku-management"><strong>2.5 SKU MANAGEMENT</strong></h2>
+<div style="text-align: center;">
+<img src="path/image-12.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p><strong>Accessible for:</strong> Administrator</p>
+<p>You can create, delete, copy, or view an SKU.</p>
+<p><strong>SKU ID:</strong> This ID is used as Short-Code for SKU Name to access SKU using PLC, etc.</p>
+<p><strong>SKU Name:</strong> This is used as the name of the Item that has to be inspected.</p>
+<p><strong>Create:</strong> Select the SKU ID and enter the new SKU Name and click on <strong>ADD</strong> button. Special Characters and Existing SKU Names are not allowed to create new SKU.</p>
+<div style="text-align: center;">
+<img src="path/image-20.png" alt="alt text" style="width: 300px; height: auto;"> 
+</div>
+
+<p><strong>Delete:</strong> Select the SKU.  Click on the ‘<strong>x</strong>’ mark. It will prompt dialog box to accept for the deletion of the SKU. Once it is deleted, it is deleted permanently and it is not possible to recover it back.</p>
+<div style="text-align: center;">
+<img src="path/image-21.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
+
+<p><strong>Copy:</strong> Select the new SKU ID and Enter the New SKU Code. Select the Existing Job and Click on <strong>COPY</strong> Button. After Copy is completed, the newly copied Job is appeared in the list.</p>
+<div style="text-align: center;">
+<img src="path/image-22.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
+
+<p><strong>View:</strong> All the Settings relative for the SKU will be visible in the main screen of this SKU Management.</p>
+<div style="text-align: center;">
+<img src="path/image-19.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>The Settings that are visible for every SKU are:</p>
+<div class="highlight"><pre><span></span><code>•   Image Settings : The inspection parameters are displayed in this section.
+
+•   Camera Settings : The camera settings for each SKU, such as the serial number
+,IP address, etc., are displayed in this section.
+
+•   Marking Items : The naming conventions for the inspection parameters that have 
+been configured are displayed in this section.
+
+•   Communication Settings : The communication strings that are added to the sku will be visible in this section
+</code></pre></div>
+<p>You can also delete individual settings by clicking the <strong>DELETE</strong> button.</p>
+<h2 id="26-marking-items"><strong>2.6 MARKING ITEMS</strong></h2>
+<p>There are various tools available in this application for component inspection. You can configure the required tools by selecting the tool name, tool ID, and marking name.</p>
+<div style="text-align: center;">
+<img src="path/image-13.png" alt="alt text" style="width: 500px; height: auto;"> 
+</div>
+
+<div style="text-align: center;">
+<img src="path/image-14.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Select the Existing <strong>SKU</strong>.</p>
+<p>•   Click on <strong>Select Tool</strong> and Select <strong>Marking ID</strong> which is the tool required for the inspection.</p>
+<p>•   Enter Marking Name and Click on <strong>ADD</strong> Button.</p>
+<p>•   Select all inspection parameters and add tools which are required for inspection.</p>
+<p>•   Click the <strong>Save</strong> button to save the inspection parameters linked to the selected SKU.</p>
+<p>•   Click on <strong>Back</strong> Button to go back to Dashboard Screen.</p>
+<p>•   Select "<strong>PatternMatchMax</strong>" as the first marking tool if you need to reference other inspection tools with pattern matching. This will ensure that the inspection tools move accordingly wherever the object moves</p>
+<h2 id="27-camera-management"><strong>2.7 CAMERA MANAGEMENT</strong></h2>
+<p>You can select a camera from the list of available, configured cameras. Each camera should be selected and configured with the appropriate SKU. There are various tools available in this application for component inspection. Configure the required tools by selecting the tool name, tool ID, and marking name.</p>
+<div style="text-align: center;">
+<img src="path/image-23.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Select the <strong>SKU Number</strong>.  </p>
+<p>•   Select the <strong>Camera</strong>.</p>
+<p>•   Enable the Save Image Option.</p>
+<p>•   Click on <strong>CONNECT</strong>** Button.</p>
+<p>•   Click on <strong>START</strong> Button.</p>
+<p>•   Send the <strong>TRIGGER</strong> Command through ModbusTCP from PLC.</p>
+<p>•   Once the Image is captured, the STOP Button will be clicked automatically.</p>
+<p>•   Click on <strong>SAVE</strong>  button to save the Camera Settings for the Selected <strong>SKU</strong>.</p>
+<p>•   Click on <strong>BACK</strong>  button to go back to the dashboard.</p>
+<h2 id="28-image-management"><strong>2.8 IMAGE MANAGEMENT</strong></h2>
+<p>Accessible for: <strong>Administrator</strong>.</p>
+<div style="text-align: center;">
+<img src="path/image-24.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>The images saved from <strong>Camera Management</strong> are displayed on this screen</p>
+<p>•   Select the <strong>SKU Number</strong>.</p>
+<p>•   <strong>Add Images:</strong> You can also add images manually, though they are typically captured from Camera Management. If a camera is unavailable, offline inspection can be performed by adding images manually.</p>
+<p>•   <strong>Delete Images:</strong> If the saved images from the camera are not satisfactory, you can delete the image for the selected SKU</p>
+<p>•   Click on 3D Button(cube) below the images to view the image in 3D Viewer.</p>
+<p>•   Click the <strong>BACK</strong> button to return to the dashboard screen.</p>
+<h2 id="29-teach-image"><strong>2.9 TEACH IMAGE</strong></h2>
+<p>Accessible for: Administrator</p>
+<p>•   Select SKU and click on <strong>Load Settings</strong> Button.</p>
+<p>•   Select Image Number.</p>
+<p>•   Select Marking Item.  </p>
+<p>•   Click on <strong>ADD</strong> Button to Add/Edit Inspection Parameters</p>
+<p>Select any Marking Item and click on <strong>ADD</strong> Button.</p>
+<div style="text-align: center;">
+<img src="path/image-25.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>If the Marking Item is already available in the list, then it is possible to Delete the Marking Item by clicking on ‘<strong>x</strong>’ for selected Marking Item, or Edit the Marking Item by selecting the Marking Item from list and click on <strong>EDIT</strong> Button.</p>
+<p>Click on <strong>SAVE</strong> button to save the settings for the Selected SKU.</p>
+<p>Click on <strong>BACK</strong>  button to go back to the dashboard.</p>
+<p>When Clicked on ADD/EDIT button, the new screen will open to configure the inspection settings for that respective Marking Item configured Tool Name.</p>
+<p>Just for example, for each tool, a new marking item has been added in this user manual. Below is the Description for each Inspection Tool.</p>
+<p><strong>Tools:</strong></p>
+<p><strong>Pattern Match Max:</strong> This tool is used to identify the pattern which is trained on the image. Used in Locating the Object, Presence/Absence of Objects in Image</p>
+<p><strong>Surface Distance:</strong> This tool is used to measure distance from one surface to another surface for the defined regions.</p>
+<p><strong>Peak:</strong> This tool is used to measure the distance value for the defined region.</p>
+<p><strong>Blob:</strong> This tool is used to count the objects which are available at different surface distances.</p>
+<p><strong>Width:</strong> This tool is used to measure the width between two edges for the defined region</p>
+<p><strong>Pixel Counter:</strong> This tool is used to calculate the number of pixel values available in the given grey scale min-max values. Used for Presence/Absence of Objects in Image.</p>
+<p><strong>Combine Results:</strong> This tool is used to give the combined results of all the configured tools.</p>
+<p>After configuring all tools, the teach image screen will look like this:</p>
+<div style="text-align: center;">
+<img src="path/image-26.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<h3 id="291-pattern-match-max"><strong>2.9.1 PATTERN MATCH MAX</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-27.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p><strong>Search Region:</strong> It is Yellow-Color Region where the pattern has to be searched.</p>
+<p><strong>Pattern Region:</strong> It is Blue-Color Region where the pattern has to be trained.
+If the Tool is Added for the First Time, then follow the below procedure:</p>
+<p>•   Click on <strong>SELECT REGION</strong> Button. Modify the Region of Pattern Region to train the pattern and modify the Region of Search Region in-order to search the Pattern.</p>
+<p>•   Click on <strong>TRAIN</strong> Button to train the selected Pattern Region.</p>
+<p>•   Click on <strong>RUN</strong> Button to run the Pattern in the Search Region.</p>
+<p>•   View the Pattern Found Results.</p>
+<p>•   Click on <strong>SAVE</strong> Button to save the setting.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard</p>
+<p>If the Tool is Already Added and Clicked on Edit Button, then follow the below procedure:</p>
+<p>•   Modify the Search Region (if required).</p>
+<p>•   Click on <strong>RUN</strong> Button to run the Pattern in the Search Region.</p>
+<p>•   View the Pattern Found Results.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p>Additionally, there are many settings for the “PatternMatchMax” Tool.</p>
+<p><strong>Result:</strong> The Result will be PASS or FAIL based on conditions, i.e., Pattern Count Min and Max. The Results contains the details such as Center-X, Center-Y, Angle, Score of the pattern.</p>
+<p>The Settings depends on type of application on how pattern has to be trained and searched in the image.</p>
+<h3 id="292-surface-distance"><strong>2.9.2 SURFACE DISTANCE</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-28.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Click on <strong>SELECT REGION</strong>  Button. Modify the Regions.</p>
+<p>•   Edit the Min and Max Values for the “Distance Final Value” Decision.</p>
+<p>•   Click on <strong>RUN</strong> Button to get the Results. </p>
+<p>•   View the Results – the Distance in mm between Two Regions.</p>
+<p>•   Click on <strong>BACK</strong>  Button to go back to Dashboard.</p>
+<p><strong>Fixtured Tool:</strong> Select ‘ImageSource’ or ’01-reference’ based on requirements.</p>
+<p><strong>ImageSource :</strong>Load actual image which is captured from camera.</p>
+<p><strong>01-reference :</strong> Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).</p>
+<p><strong>Select A Region:</strong> Select the Region as RECT_ROTATED or ELLIPSE. </p>
+<p><strong>Select Region Button:</strong> Click on this button to add the new Regions on the image and modify the regions where we need to measure the distance.</p>
+<p><strong>Reference Type:</strong> Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement which is relevant for Green-Color Region.</p>
+<p><strong>Region Type:</strong> Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement which is relevant for Blue-Color Region where we need to calculate the distance w.r.t reference.</p>
+<p><strong>Offset:</strong> Enable offset and enter the Min and Max Offset Values – if it is enabled, then the measurement will be measured in between the offset values (mm) only.</p>
+<p><strong>Result:</strong> The Result is PASS or FAIL based on conditions, i.e., Distance Final Value Min and Max. The Results contains details such as Distance in mm between selected two regions.</p>
+<p>The Settings depends on type of application on how measurement has to be done between two regions.</p>
+<h3 id="293-peak"><strong>2.9.3 PEAK</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-29.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Click on <strong>SELECT REGION</strong>  Button. Modify the Regions.</p>
+<p>•   Edit the Min and Max Values for the “Peak Final Value” Decision.</p>
+<p>•   Click on <strong>RUN</strong> Button to get the Results.</p>
+<p>•   View the Results – the Distance in mm at the selected region.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p><strong>Fixtured Tool:</strong> Select ‘ImageSource’ or ’01-reference’ based on requirements.</p>
+<p><em>ImageSource :</em> Load actual image which is captured from camera.</p>
+<p><em>01-reference :</em> Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).</p>
+<p><strong>Measurement Type:</strong> Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement.</p>
+<p><strong>Select A Region:</strong> Select the Region as RECT_ROTATED or ELLIPSE.</p>
+<p><strong>Select Region Button:</strong> Click on this button to add the new Region on the image and modify the region where we need to measure the peak value.</p>
+<p><strong>Result:</strong> The Result will be PASS or FAIL based on conditions, i.e., Peak Final Value Min and Max. The Results contains the details such as Peak in mm.</p>
+<p>The Settings depends on type of application on the peak value has to be measured.</p>
+<h3 id="294-blob"><strong>2.9.4 BLOB</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-30.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Click on <strong>SELECT REGIONS</strong> Button. Modify the Regions.</p>
+<p>•   Enter the Distance Min and Max Values.</p>
+<p>•   Enter the Blob Count Min and Max Values.</p>
+<p>•   Click on <strong>RUN</strong> Button to get the Results. </p>
+<p>•   View the Results – (Center-X, Center-Y in mm) and Blob Area at the selected region.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p><strong>Fixtured Tool:</strong> Select ‘ImageSource’ or ’01-reference’ based on requirements.</p>
+<p><em>ImageSource :</em> Load actual image which is captured from camera.</p>
+<p><em>01-reference :</em> Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).</p>
+<p><strong>Select A Region:</strong> Select the Region as RECT_ROTATED or ELLIPSE.</p>
+<p><strong>Select Region Button:</strong> Click on this button to add the new Region on the image and modify the region where we need to measure the peak value.</p>
+<p>The Yellow-Color Region is used to calculate the peak value at the selected region. The Blue-Color Region is used to find the blob with the settings.</p>
+<p><strong>Distance (mm):</strong> Enter the Min Max distance in mm where the blob has to be identified.</p>
+<p><strong>Blob Area (px):</strong> Enter the Min Max blob area in pixels where the blob has to be identified.</p>
+<p><strong>Circularity, Num Holes:</strong> Enter the Min Max of blob circularity and number of holes where the blob has to be filtered.</p>
+<p><strong>Result:</strong> The Results contains the details such as Blob Center-X, Center-Y in mm and Blob Area.</p>
+<p>The Settings depends on type of application on how blob tool has to be calculated.</p>
+<h3 id="295-width"><strong>2.9.5 WIDTH</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-31.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Click on <strong>SELECT REGION</strong> Button. Modify the Regions.</p>
+<p>•   Enter the Width Min and Max Values.</p>
+<p>•   Click on <strong>RUN</strong> Button to get the Results. </p>
+<p>•   View the Results – Width in mm.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p><strong>Fixtured Tool:</strong> Select ‘ImageSource’ or ’01-reference’ based on requirements.</p>
+<p><em>ImageSource :</em> Load actual image which is captured from camera.</p>
+<p><em>01-reference :</em> Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).</p>
+<p><strong>Measurement Type:</strong> Select ‘AVERAGE’ or ‘HIGHEST’ or ‘LOWEST’ based on type of measurement.</p>
+<p><strong>Select A Region:</strong> Select the Region as RECT_ROTATED.</p>
+<p><strong>Select Region Button:</strong> Click on this button to add the new Region on the image and modify the region where we need to measure the width.</p>
+<p>The Green-Color Region and Blue-Color Region used to calculate the width between two regions.</p>
+<p><strong>Distance (mm):</strong> Enter the Min Max distance in mm where the width has to be identified.</p>
+<p><strong>Polarity, Priority, Num Points:</strong> Select the values for the Edge1 and Edge2, where the edge location has to be identified.</p>
+<p><strong>Result:</strong> The Result will be PASS or FAIL based on conditions, i.e., Width Min and Max. The Results contains the details such as Width in mm.</p>
+<p>The Settings depends on type of application on how width tool has to be calculated.</p>
+<h3 id="296-pixel-counter"><strong>2.9.6 PIXEL COUNTER</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-32.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Click on <strong>SELECT REGION</strong> Button. Modify the Regions.</p>
+<p>•   Enter the Set Thresh Min and Max Values.</p>
+<p>•   Click on <strong>RUN</strong> Button to get the Results. </p>
+<p>•   View the Results – Pixel Counter Value.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p><strong>Fixtured Tool:</strong> Select ‘ImageSource’ or ’01-reference’ based on requirements.</p>
+<p><em>ImageSource :</em> Load actual image which is captured from camera.</p>
+<p><em>01-reference :</em> Load referenced image which is routed through pattern match max tool. If the Object is moved, then this tool also will move accordingly(x, y, angle).</p>
+<p><strong>Select A Region:</strong> Select the Region as RECT_ROTATED or ELLIPSE.</p>
+<p><strong>Select Region Button:</strong> Click on this button to add the new Region on the image and modify the region where we need to measure the summation of pixel gray values count in region.</p>
+<p><strong>Set Thresh:</strong> Enter the Min Max gray scale values in where the pixel counter values has to be taken into consideration for calculating pixel counter.</p>
+<p><strong>Set Filter, Set Polarity, Set Area, Circularity, Compactness:</strong> Select the Min and Max Values where the region has to be filtered.</p>
+<p><strong>Result:</strong> The Result will be PASS or FAIL based on conditions, i.e., PixelCounter Value Min and Max. The Results contains the details such as Summation of all Pixel Gray Scale values which are in the range of Thresh Min and Max.</p>
+<p>The Settings depends on type of application on how width tool has to be calculated.</p>
+<h3 id="297-combine-results"><strong>2.9.7 COMBINE RESULTS</strong></h3>
+<div style="text-align: center;">
+<img src="path/image-33.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Select the Tool from the List.</p>
+<p>•   Click on (<strong>+</strong>) Button to add the Tool to List.</p>
+<p>•   Click on <strong>RUN</strong> Button to get the Results.</p>
+<p>•   View the Results – PASS or FAIL.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p><strong>Select A Tool:</strong> Add/Delete the Configured Tools for Inspection which has to give combined results.</p>
+<p><strong>Result:</strong> The Result will be PASS or FAIL based on conditions, i.e., if any one of the tool is failed, then the final result will be FAIL or the final result will be PASS.</p>
+<p>The Settings depends on type of application on how width tool has to be calculated.</p>
+<h2 id="210-communications"><strong>2.10 COMMUNICATIONS</strong></h2>
+<p>Accessible for: <strong>Administrator</strong>.</p>
+<div style="text-align: center;">
+<img src="path/image-34.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Select the SKU Number.</p>
+<p>•   Select the Communication String from the Tool using Drop-Down Box.</p>
+<p>•   Click on (<strong>+</strong>) Button to add the String to the Communication List.</p>
+<p>•   Select the Delimiter from the Drop-Down Box.</p>
+<p>•   Click on <strong>SAVE</strong> Button to Save the Communication String relevant to SKU.</p>
+<p>•   Click on <strong>BACK</strong> Button to go back to Dashboard.</p>
+<p>For All Inspection Tools, all the result details will be available in this communication string to configure.</p>
+<p>The configured communication string will be separated using “delimiter” when the communication string is sent through the TCP Server.</p>
+<p>The configured communication string will be sent through the ModbusTCP to the respective modbus registers.</p>
+<h2 id="211-inspection"><strong>2.11 INSPECTION</strong></h2>
+<p>Accessible for: <strong>Administrator</strong>, <strong>Maintenance</strong> and <strong>Operator</strong>.</p>
+<div style="text-align: center;">
+<img src="path/image-35.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<ol>
+<li>
+<p>Select the SKU number manually or wait for the PLC to automatically select the SKU Number through ModbusTCP Communication.</p>
+</li>
+<li>
+<p>The Settings which are linked with the respective SKU will be loaded to the Application.</p>
+</li>
+<li>
+<p>Administrator/Maintenance: Will have an option to manually load the image to inspect the image.</p>
+</li>
+<li>
+<p>Operator: Will have to wait for the PLC trigger to the camera through ModbusTCP.</p>
+</li>
+<li>
+<p>Once the Image is ready the inspection will happen automatically and update the following:</p>
+<ol>
+<li>
+<p>New Image with graphics will be updated to the Center of the Screen.</p>
+</li>
+<li>
+<p>The Inspection Results for all Tools are updated to Tree view on the Right side of the Screen.</p>
+</li>
+<li>
+<p>The Counter will be updated with the PASS/FAIL Counter at the Bottom Right of the Screen.</p>
+</li>
+<li>
+<p>The Details will be updated with the Trigger Number and Cycle Time at the Bottom Right of the Screen.</p>
+</li>
+<li>
+<p>The Message to the Operator on the status of the application is updated in the Top Center of the Screen.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="212-alarms"><strong>2.12 ALARMS</strong></h2>
+<p>Accessible for: <strong>Administrator</strong>, <strong>Maintenance</strong> and <strong>Operator</strong>.</p>
+<div style="text-align: center;">
+<img src="path/image-36.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>Alarms will display all log information for the application.</p>
+<p>•   Select Date and Select Type of Alarm </p>
+<p>•   Click on <strong>GET ALARMS</strong>  Button.</p>
+<p>•   To export alarms, select the start date and end date, then click the Export Alarms button. The alarm data will be exported to the '<strong>Data Location</strong>' folder.</p>
+<p>•   Click the  <strong>BACK</strong> Button to return to the Dashboard.</p>
+<h2 id="213-results"><strong>2.13 RESULTS</strong></h2>
+<p>Accessible for: <strong>Administrator</strong>, <strong>Maintenance</strong> and <strong>Operator</strong>.</p>
+<div style="text-align: center;">
+<img src="path/image-37.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Select the <strong>SKU Number</strong>.</p>
+<p>•   Select the <strong>Date</strong>.</p>
+<p>•   Click on <strong>GET RESULTS</strong> Button.</p>
+<p>•   The Results will be Displayed in the List.</p>
+<p>•   Click on the trigger number to view the result of the inspected object.</p>
+<p>•   Click on <strong>PDF ICON</strong> to see the PDF report of the Inspection.</p>
+<p>•   Expand the Tree View to View the Full Inspection details of the inspected object.</p>
+<p>•   The graphic image will be displayed in the center of the screen.</p>
+<p>•   The metadata information about the inspected object is available at the bottom left corner of the screen.</p>
+<p>The Result will be PASS or FAIL based on conditions, i.e., Blob Count Min and Max. 
+•   Click the <strong>BACK</strong> Button to return to the Dashboard.</p>
+<h2 id="214-reports"><strong>2.14 REPORTS</strong></h2>
+<div style="text-align: center;">
+<img src="path/image-38.png" alt="alt text" style="width: 600px; height: auto;"> 
+</div>
+
+<p>Accessible for: <strong>Administrator</strong>, <strong>Maintenance</strong> and <strong>Operator</strong>.</p>
+<p>•   Select the <strong>SKU Number</strong>.  </p>
+<p>•   Select the <strong>Start Date</strong> and <strong>End Date</strong>. </p>
+<p>•   Select the <strong>User Name</strong></p>
+<p>•   Select the Result <strong>PASS/FAIL/ALL</strong>.</p>
+<p>•   Click on <strong>GET REPORTS</strong> Button.</p>
+<p>•   The total, pass, and fail counts will be displayed in a table and also shown in a pie chart.</p>
+<p>•   The Failed Details will be shown in Table.</p>
+<p>•   The results of all inspection details will be updated in the list.</p>
+<p>•   Click the <strong>EXPORT</strong> button to export the list of all inspection details to a CSV file in the Data Location folder.</p>
+<p>•   Click on the <strong>Trigger number</strong> to view the result of the inspected object.</p>
+<p>•   Click on the <strong>PDF icon</strong> to view the PDF report of the inspection.</p>
+<p>•   Click on <strong>BACK</strong>  Button to return to the Dashboard.</p>
+<p>•   Select the trigger details to view the history of all inspection results in graph form.</p>
+<h2 id="215-tcp-server"><strong>2.15 TCP SERVER</strong></h2>
+<p>Accessible for: <strong>Administrator</strong> and <em>Maintenance</em></p>
+<p>When we select TCP Server Option, then Application will act as TCP Server and the PLC should act as TCP Client.</p>
+<p>Following are TCP Server Commands used to control application in Inspection Screen:</p>
+<p>(1) <strong>Reset the Job</strong></p>
+<div class="highlight"><pre><span></span><code>Syntax: SKU_RESET
+Response: SUCCESS or FAILURE
+</code></pre></div>
+<p>(2) <strong>Get the List of Jobs Available</strong></p>
+<div class="highlight"><pre><span></span><code>Syntax: SKU_LIST
+Response: Provides the List of Jobs with comma separated
+</code></pre></div>
+<p>(3) <strong>Select the Job – 3 Ways to Load Job</strong></p>
+<div class="highlight"><pre><span></span><code>Syntax: SKUCODE_jobName
+Example: SKUCODE_newjob1
+Response: SUCCESS or FAILURE
+
+Syntax: SKUID_jobID
+Example: SKU_001
+Response: SUCCESS or FAILURE
+
+Syntax: SKUIDCODE _jobID-jobName
+Example: SKU_001-newjob1
+Response: SUCCESS or FAILURE
+Action: The Application will load the respective SKU Settings to the inspection.
+</code></pre></div>
+<p>(4) <strong>Trigger Image</strong></p>
+<div class="highlight"><pre><span></span><code>Syntax: TRIGGER_filename
+Example: TRIGGER_range-image_00001
+Response: Data which is configured in Communications
+</code></pre></div>
+<p>(5) <strong>Trigger Camera</strong></p>
+<div class="highlight"><pre><span></span><code>Syntax: TRIGGER
+Response: Data which is configured in Communications
+</code></pre></div>
+<p>To simulate TCP Client, we use Hercules Application which can be downloaded from internet.</p>
+<div style="text-align: center;">
+<img src="path/image-39.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Click on START SERVER button.</p>
+<p>•   Open Hercules Application and Open TCP Client. Enter the IP Address as “127.0.0.1” or the IP Address which is visible in the TCP Server Screen.</p>
+<p>•   Enter Port Number which is configured in the TCP Server in the TCP Client.</p>
+<p>•   Click on Connect Button in the TCP Client.</p>
+<p>•   Send some data from TCP Client and check if the data is received in TCP Server.</p>
+<p>•   Send some data from TCP Server and check if the data is received in TCP Client.</p>
+<p>•   If the Data sending and receiving is occurring fine between TCP Client and TCP Server, then we can confirm that the TCP Server is working fine as expected.</p>
+<p>•   Click on STOP SERVER button.</p>
+<p>•   Click on <strong>BACK</strong> button to go back to Dashboard.</p>
+<h2 id="217-modbus-tcp"><strong>2.17 MODBUS TCP</strong></h2>
+<p>Accessible for: <strong>Administrator</strong> and <strong>Maintenance</strong></p>
+<p>When we select ModbusTCP Option, then Application will act as Modbus TCP Client and the PLC should act as Modbus TCP Server.</p>
+<p>IP Address, Port Number, Start Address, and Multiplication Factor (for digital values): Will be configured in the Settings.</p>
+<p>Heart-beat for the Inspect3D Application to monitor ModbusTCP Register to write/read is 30 milliseconds.</p>
+<p>Handshaking of Registers between the PLC and ModbusTCP in the Inspect3D Application is explained below.</p>
+<div style="text-align: center;">
+<img src="path/image-40.png" alt="alt text" style="width: 400px; height: auto;"> 
+</div>
+
+<p>The Standard Modbus Registers are pre-configured with the Register Locations. It is possible to reconfigure the Register Locations. This is accessible only for Administrator.</p>
+<p><strong>COMMUNICATION :</strong> It is used to establish a hear-beat kind of communication between the Inspect3D Application and the PLC. For every 5 Seconds, the Application will write the register value as ‘1’ and the PLC will check if the value is ‘1’ or not. If the value is not ‘1’ within the heart-beat time, then PLC can know that there is some problem with communication. PLC also will write the register value as ‘2’.</p>
+<p><strong>SKUID:</strong>  When we need to select an SKU from the PLC, then PLC will write to SKUID Register location with a number (SKUID). Please refer SKU Management to get to know the SKUID of each SKU.</p>
+<p><strong>SKUID_FEEDBACK:</strong> The Application will monitor the SKUID and if the Valid SKUID is read in the SKUID Register location, then the respective SKU will be loaded to the application (all the camera and inspection parameters are loaded and ready to inspect). Once the SKU is successfully loaded, then the SKUID_FEEDBACK register will be written with the same ‘SKUID Value’ by the Application. Once the PLC will read the same value in the register, then PLC will reset this register to ‘0’.</p>
+<p><em>Example :</em> PLC will send the value as ‘5’ to the SKUID register, then Application will look for the load the SKUID which is ‘5’. Upon successful loading of SKU, then Value ‘5’ will be sent back to the SKUID_FEEDBACK Register Location.</p>
+<p><strong>TRIGGER:</strong>  When we need to start the inspection for an object, then PLC will write to TRIGGER Register location with a number ‘1’.</p>
+<p><strong>TRIGGER_FEEDBACK:</strong> Once the Application read this register TRIGGER with value ‘1’, then the TRIGGER Register will be reset with number ‘0’ and TRIGGER_FEEDBACK will be written as ‘1’. The PLC will receive the TRIGGER_FEEDBACK and reset the Value with ‘0’.</p>
+<p><strong>CAMERA_STATUS:</strong> The CAMERA_STATUS Register value will be written by the Application. The PLC will monitor this camera status and perform the process steps as per their automation cycle.</p>
+<div class="highlight"><pre><span></span><code>Register Value as 3 =&gt; if the inspection is in progress.
+Register Value as 2 =&gt; ready to take the trigger
+Register Value as 0 =&gt; camera is not yet ready
+</code></pre></div>
+<p><strong>RESULT:</strong> The RESULT Register value will be written by the Application. The PLC will monitor this result and perform the process steps as per their automation cycle.</p>
+<div class="highlight"><pre><span></span><code>Register Value as 2 =&gt; if the Result is FAIL.
+Register Value as 1 =&gt; if the Result is PASS.
+Register Value as 0 =&gt; if the Result is Not Yet Ready.
+</code></pre></div>
+<p>**Location of MODBUS Registers: **</p>
+<p>Register Location: Start Address [Refer Settings] + Register Location</p>
+<table>
+<thead>
+<tr>
+<th><strong>REGISTER NAME</strong></th>
+<th><strong>REGISTER LOCATION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COMMUNICATION</td>
+<td>0 (configurable between 0-19)</td>
+</tr>
+<tr>
+<td>SKUID</td>
+<td>1 (configurable between 0-19)</td>
+</tr>
+<tr>
+<td>SKUID_FEEDBACK</td>
+<td>2 (configurable between 0-19)</td>
+</tr>
+<tr>
+<td>TRIGGER</td>
+<td>3 (configurable between 0-19)</td>
+</tr>
+<tr>
+<td>TRIGGER_FEEDBACK</td>
+<td>4 (configurable between 0-19)</td>
+</tr>
+<tr>
+<td>CAMERA_STATUS</td>
+<td>10 (configurable between 0-19)</td>
+</tr>
+<tr>
+<td>RESULT</td>
+<td>11 (configurable between 0-19)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>CUSTOM-REGISTER NAME</strong></th>
+<th><strong>REGISTER LOCATION</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String1 Configured in Communication</td>
+<td>20</td>
+</tr>
+<tr>
+<td>String2 Configured in Communication</td>
+<td>21</td>
+</tr>
+<tr>
+<td>String3 Configured in Communication</td>
+<td>22</td>
+</tr>
+<tr>
+<td>String4 Configured in Communication</td>
+<td>23</td>
+</tr>
+<tr>
+<td>String5 Configured in Communication</td>
+<td>24</td>
+</tr>
+<tr>
+<td>String6 Configured in Communication</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+<p>To simulate Modbus TCP, we use Modbus Simulator Application which can be downloaded from internet.</p>
+<div style="text-align: center;">
+<img src="path/image-41.png" alt="alt text" style="width: 750px; height: auto;"> 
+</div>
+
+<p>•   Open Modbus Server in the PLC.</p>
+<p>•   Click on CONNECT button. If the Modbus in the PLC is opened, then the Modbus TCP Client Application will Connect otherwise it will NOT Connect.</p>
+<p>•   Write Registers: Select the Value and Click on ADD Button.</p>
+<p>•   Write Registers: Click on WRITE MULTIPLE REGISTERS Button.</p>
+<p>•   Read Registers: Click on READ MULTIPLE REGISTERS Button.</p>
+<p>•   The Values which are written should be able to read.</p>
+<p>•   Click on DISCONNECT button.</p>
+<p>•   Click on <strong>BACK</strong> button to go back to Dashboard.</p>
+<p><strong>For more details click on the below :</strong></p>
+<p><a href="https://rokamtechnology.github.io/modbusTCP_Manual/">ModbusTCP Online Manual</a></p>
+<h2 id="217-edit-image-settings"><strong>2.17 EDIT IMAGE SETTINGS</strong></h2>
+<p>Accessible for: <strong>Administrator</strong> and <strong>Maintenance</strong></p>
+<div style="text-align: center;">
+<img src="path/image-42.png" alt="alt text" style="width: 800px; height: auto;"> 
+</div>
+
+<p>•   Select the SKU Number.</p>
+<p>•   Click on <strong>LOAD SETTINGS</strong> Button.</p>
+<p>•   Click to edit the “MIN VALUE NEW” and “MAX VALUE NEW” for each inspection tool name.
+These Values will decide for PASS or FAIL for the Inspection Result for individual tool.</p>
+<p>•   View the “MIN VALUE OLD” and “MAX VALUE OLD” to view existing settings value.</p>
+<p>•   Click on <strong>SAVE</strong> button to save the Image Settings.</p>
+<p>•   Click on <strong>BACK</strong> button to go back to Dashboard.</p>
+<h2 id="3maintenance-and-troubleshooting"><strong>3.MAINTENANCE and TROUBLESHOOTING</strong></h2>
+<p><strong><em>Maintenance :</em></strong></p>
+<p>•   The inspection results are stored in the 'Data Location' folder.</p>
+<p>Please ensure that at least 25% of free space is always available on the respective drive.</p>
+<p>•   If less than 5% of free space is available on the application installation drive (ideally the C drive) or on the 'Data Location' folder drive, the application will not open.</p>
+<p><strong><em>TROUBLESHOOTING :</em></strong></p>
+<p>•   There are three types of messages that will appear in a dialog box.</p>
+<p>•   Information, Warning and Error</p>
+<p>•   When an error occurs, delete the SKU with the error through SKU Management and create a new SKU for it.</p>
+<p>•   Please read the camera user manual carefully for troubleshooting instructions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/rokamtechnology" target="_blank" rel="noopener">ROKAM</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://rokam.co" target="_blank" rel="noopener" title="rokam.co" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "announce.dismiss", "header.autohide"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
